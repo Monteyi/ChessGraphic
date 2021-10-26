@@ -36,6 +36,30 @@ public class Main {
             }
         }
 
+        // image for rooks
+        squares[0][0].add(new JButton(new ImageIcon(getClass().getResource("BRook.png"))));
+        squares[0][7].add(new JButton(new ImageIcon(getClass().getResource("BRook.png"))));
+        squares[7][0].add(new JButton(new ImageIcon(getClass().getResource("WRook.png"))));
+        squares[7][7].add(new JButton(new ImageIcon(getClass().getResource("WRook.png"))));
+
+        // image for knights
+        squares[0][1].add(new JButton(new ImageIcon(getClass().getResource("BKnight.png"))));
+        squares[0][6].add(new JButton(new ImageIcon(getClass().getResource("BKnight.png"))));
+        squares[7][1].add(new JButton(new ImageIcon(getClass().getResource("WKnight.png"))));
+        squares[7][6].add(new JButton(new ImageIcon(getClass().getResource("WKnight.png"))));
+
+        // image for bishops
+        squares[0][2].add(new JButton(new ImageIcon(getClass().getResource("BBishop.png"))));
+        squares[0][5].add(new JButton(new ImageIcon(getClass().getResource("BBishop.png"))));
+        squares[7][2].add(new JButton(new ImageIcon(getClass().getResource("WBishop.png"))));
+        squares[7][5].add(new JButton(new ImageIcon(getClass().getResource("WBishop.png"))));
+
+        // image for Queen
+        squares[0][3].add(new JButton(new ImageIcon(getClass().getResource("BQueen.png"))));
+        squares[0][4].add(new JButton(new ImageIcon(getClass().getResource("BKing.png"))));
+        squares[7][3].add(new JButton(new ImageIcon(getClass().getResource("WQueen.png"))));
+        squares[7][4].add(new JButton(new ImageIcon(getClass().getResource("WKing.png"))));
+
         // image for pawns
         for (int i = 0; i < 8; i++) {
             squares[1][i].add(new JButton(new ImageIcon(getClass().getResource("BPawn.png"))));
